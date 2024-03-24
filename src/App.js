@@ -63,7 +63,7 @@ export default function App() {
       <div style={containerstyle}>
         {filteredCountries.map((item) => {
           return (
-            <div key={item.cca3} style={cardstyle}>
+            <div  className={"countryCard"} key={item.cca3} style={cardstyle}>
               <img src={item.flags.png} alt="flag" width={100} height={100} />
               <p style={para}>{item.name.common} </p>
             </div>
